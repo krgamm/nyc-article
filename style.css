@@ -3,11 +3,224 @@
   padding: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "AvenierNext";
-  src: url("./fonts/Avenir\ Next.otf");
+body {
+  width: 100vw;
 }
 @font-face {
-  font-family: "HelveticaNeue-thin";
-  src: url("./fonts/HelveticaNeue\ Thin.ttf");
+  font-family: "Libre Franklin";
+  src: (
+    "https://fonts.googleapis.com/css?family=Libre+Franklin:400,700,800&display=swap"
+  );
+}
+@font-face {
+  font-family: "Arial Bold";
+  src: url("./fonts/Arial\ Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("./fonts/Georgia.ttf");
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("./fonts/Georgia\ Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("./fonts/Georgia\ Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Imperial";
+  src: url("./fonts/ImperialBT-Roman.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Times";
+  src: url("./fonts/Times.ttc");
+}
+@font-face {
+  font-family: "Times New Roman";
+  src: url("./fonts/Times\ New\ Roman.ttf");
+}
+@font-face {
+  font-family: "Times New Roman";
+  src: url("./fonts/Times\ New\ Roman\ Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Times New Roman";
+  src: url("./fonts/Times\ New\ Roman\ Bold\ Italic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Times New Roman";
+  src: url("./fonts/Times\ New\ Roman\ Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/Helvetica.ttc");
+  font-weight: bold;
+}
+
+/* Here are the fonts for the webpage
+    - nyt-franklin, helvetica, arial, sans serif
+    - nyt-imperial. georgia, 'times new roman',times,serif
+    - */
+p,
+a {
+  font-family: "Imperial", "Georgia", "Times New Roman", "Times", serif;
+  font-size: 18px;
+  line-height: 35px;
+}
+h1,
+h2,
+h3,
+span,
+button {
+  font-family: "Libre Franklin", "Helvetica", "Arial Bold", sans-serif;
+  font-weight: 800, bold;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style-type: none;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav ul,
+li {
+  display: flex;
+}
+nav {
+  width: 100%;
+  height: 100%;
+  padding: 0 80px 0 80px;
+  display: flex;
+  border-bottom: lightgray 5px;
+}
+nav ul {
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  height: 30px;
+  width: 50px;
+  background-color: rgb(86, 123, 149);
+  color: white;
+  border: solid 1px rgb(50, 104, 145);
+  border-radius: 5px;
+}
+#sub {
+  width: 120px;
+  text-align: center;
+  margin-right: 30px;
+}
+#acct {
+  width: 100px;
+}
+.logo {
+  width: 200px;
+}
+.nav-left {
+  justify-content: space-between;
+  width: 200px;
+}
+.nav-left a img {
+  width: 20px;
+  height: 20px;
+}
+
+header,
+main,
+section,
+footer {
+  margin: auto;
+  width: 1200px;
+}
+.article-title {
+  margin: 25px 50% 25px 10%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+#hero {
+  margin-bottom: 60px;
+}
+#figc-hero {
+  width: 70%;
+}
+#figc-hero span {
+  margin-left: 10px;
+  font-size: 12px;
+}
+#author {
+  display: block;
+  margin: 30px auto 30px auto;
+}
+.date-socials {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-bottom: 50px;
+}
+#socials {
+  width: 40%;
+  justify-content: space-between;
+}
+#socials a {
+  background-color: lightgray;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+main p,
+.information,
+h2,
+.embed-vid,
+.bottom-legal,
+.info-bottom {
+  display: block;
+  width: 600px;
+  margin: auto;
+}
+.embed-vid {
+  margin: 20px auto 20px auto;
+}
+.jumbo-2 {
+  width: 700px;
+  margin: auto;
+}
+.bottom-legal {
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  color: gray;
+  margin-top: 25px;
+}
+.info-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.info-bottom button {
+  width: 300px;
+  font-size: 15px;
+}
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
